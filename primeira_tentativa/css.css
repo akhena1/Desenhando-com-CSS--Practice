@@ -5,26 +5,27 @@
     --cinza: rgb(71, 71, 62);
 }
 .containerFrontal{
+    
+    margin: auto;
+    height: 18px;
+    margin-top: -12px;
+}
+.containerFrontal, .frontalCam, .frontalSom, .botaoMobile, .traseiraCam, .traseiraCamInside, .flash{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    height: 18px;
-    margin-top: -12PX;
+}
+.frontalCam, .frontalCamInside, .botaoMobile, .personIcon, .traseiraCam, .bolinha, .flash, .flashInside{
+	border-radius: 100%;
 }
 .frontalCam{
     width: 9px;
     height: 9px;
-    border-radius: 100%;
-    background-color: #6e6d6d;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+    background-color: #6e6d6d;    
 }
 .frontalCamInside{
     width: 2px;
     height: 2px;
-    border-radius: 100%;
     background-color: black;
 }
 .frontalSom{
@@ -33,9 +34,6 @@
     background-color: #464545;
     margin-left: 8px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .frontalSomInside{
     width: 50px;
@@ -65,33 +63,28 @@
     background-image: url(img/wallpaper.jpg);
     width: 280px;
     height: 451px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     background-size: 300px;
     background-repeat: no-repeat;
 }
 .tela{
     width: 280px;
-    height: 451px;
+    height: 451px; 
+    background-color: rgb(236, 227, 227);
+    background: linear-gradient(45deg, #413c3c, transparent);  
+}
+.backgroundLogin , .tela{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: rgb(236, 227, 227);
-    background: linear-gradient(45deg, #413c3c, transparent);  
+
 }
 .botaoMobile{
     width: 40px;
     height:40px;
     border: 1px solid var(--cinza);
-    border-radius: 100%;
     margin-top: 10px;
     margin-left: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
     background: linear-gradient(200deg, #f1f0f0, #707070);
 }
@@ -126,7 +119,6 @@
 .personIcon{
     width: 90px;
     height: 88px;
-    border-radius: 100%;
     background-color: white;
     margin: auto;
     margin-bottom: 25px;
@@ -198,29 +190,24 @@
 }
 .botaoLigar{
     width: 3px;
-    height: 35px;
-    background-color: black;
     margin-top: 80px;
 }
 .volUp{
     width: 2px;
-    height: 35px;
-    background-color: black;
     margin-top: 160px;
     margin-left: -3px;
 }
 .volDown{
     width: 2px;
-    height: 35px;
-    background-color: black;
     margin-top: 20px;
     margin-left: -3px;
 }
+.botaoLigar , .volUp, .volDown{
+    height: 35px;
+    background-color: black;
+}
 
-
-
-
-
+/* Parte traseira */
 
 .botaoLigarTraseira{
     width: 3px;
@@ -276,22 +263,15 @@
     width: 25px;
     height: 25px;
     background-color: #bbbbbb;
-    border-radius: 100%;
     margin-top: 2px;
     margin-left: 10px;
     background: linear-gradient(50deg, white ,  #707070);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .traseiraCamInside{
     width: 10px;
     height: 10px;
     border-radius: 100%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .traseiraCamInsideFromInside{
     width: 2px;
@@ -303,7 +283,6 @@
     width: 9px;
     height: 9px;
     background-color: rgb(83, 81, 81);
-    border-radius: 100%;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -311,18 +290,13 @@
     width: 17px;
     height: 17px;
     background-color: #bbbbbb;
-    border-radius: 100%;
     margin-top: 6px;
     margin-left: 12px;
     background: linear-gradient(to left, #bbbbbb,  white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .flashInside{
     width: 6px;
     height: 6px;
-    border-radius: 100%;
     background-color: white;
     background: linear-gradient(to left, white, #bbbbbb)
 }
@@ -340,5 +314,3 @@
     top: 35px;
     z-index: 0;
 }
-
-
